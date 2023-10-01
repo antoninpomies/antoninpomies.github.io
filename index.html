@@ -7,6 +7,13 @@
     <title>My Website</title>
   </head>
   <body>
+    <nav class="h-14 bg-black flex items-center">
+      <div class="text-light text-red-500 text-center space-x-3">
+        <div><a href="#">Mes Réseaux</a></div>
+        <div><a href="#">Me contacter</a></div>
+      </div>
+    </nav>
+    <br><br><br>
     <div class="grid grid-cols-3">
       <div></div>
       <div>
@@ -14,7 +21,7 @@
           <h1 id="typewriter" class="text-4xl font-bold"></h1>
         </div>
         <script>
-          const words = ["Salut &#128075;", "Welcome &#128075;", "Hi &#128075;"];
+          const words = ["Salut, moi c'est Antonin 👋           ", "Bienvenue sur mon site 👍        "];
           let i = 0;
           let j = 0;
           let currentWord = "";
@@ -39,13 +46,14 @@
                 isDeleting = true;
               }
             }
-            setTimeout(type, 300);
+            setTimeout(type, 200);
           }
           
         type();
         </script>
       </div>
       <div></div>
+    
     </div>
   </body>
 </html>
