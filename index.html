@@ -1,65 +1,60 @@
 <!DOCTYPE html>
-<html class="dark:db-grey-800">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>My Website</title>
-  </head>
-  <body>
-    <nav class="h-14 bg-black">
-      <div class="text-light text-white-500 space-x-3 h-full flex items-center justify-items-start">
-        <div>
-          <label class="relative inline-flex mr-5 cursor-pointer">
-            <input type="checkbox" value="" class="sr-only peer" checked>
-            <div class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600"></div>
-            <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Night Mode 🌓</span>
-          </label>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Antonin - Développeur Web</title>
+</head>
+<body>
+    <header>
+        <h1>Antonin</h1>
+        <p>Développeur Web passionné</p>
+    </header>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Insérez ici une présentation détaillée de votre parcours, compétences et passion.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Compétence 1</li>
+            <li>Compétence 2</li>
+            <!-- Ajoutez d'autres compétences -->
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="projet1.jpg" alt="Projet 1">
+            <p>Description du projet 1.</p>
         </div>
-        <div><a href="#">Mes Réseaux</a></div>
-        <div><a href="#">Me contacter</a></div>
-      </div>
-    </nav>
-    <br><br><br>
-    <div class="grid grid-cols-3">
-      <div></div>
-      <div>
-        <div class="w-full h-full flex justify-center items-center">
-          <h1 id="typewriter" class="text-4xl font-bold"></h1>
-        </div>
-        <script>
-          const words = ["Salut, moi c'est Antonin 👋           ", "Bienvenue sur mon site 👍        "];
-          let i = 0;
-          let j = 0;
-          let currentWord = "";
-          let isDeleting = false;
-          
-          function type() {
-            currentWord = words[i];
-            if (isDeleting) {
-              document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
-              j--;
-              if (j == 0) {
-                isDeleting = false;
-                i++;
-                if (i == words.length) {
-                  i = 0;
-                }
-              }
-            } else {
-              document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
-              j++;
-              if (j == currentWord.length) {
-                isDeleting = true;
-              }
-            }
-            setTimeout(type, 200);
-          }
-          
-        type();
-        </script>
-      </div>
-      <div></div>
-    </div>
-  </body>
+        <!-- Ajoutez d'autres projets -->
+    </section>
+
+    <section id="testimonials">
+        <h2>Témoignages</h2>
+        <blockquote>
+            <p>"Témoignage d'un client satisfait."</p>
+            <cite>Nom du client</cite>
+        </blockquote>
+        <!-- Ajoutez d'autres témoignages -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Vous pouvez me contacter à l'adresse suivante : <a href="mailto:contact@antonin.com">contact@antonin.com</a></p>
+        <!-- Ajoutez un formulaire de contact si nécessaire -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Antonin - Développeur Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
+
