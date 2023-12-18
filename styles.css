@@ -1,43 +1,36 @@
 body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f8f8;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 0;
+    background-color: #007BFF;
+    color: #fff;
 }
 
-header h1 {
-    font-size: 2em;
+h1 {
+    margin: 0;
+}
+
+p {
     margin: 10px 0;
 }
 
-header p {
-    font-size: 1.2em;
-}
-
 section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
     background-color: #fff;
-    margin-bottom: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #333;
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    color: #007BFF;
 }
 
 ul {
@@ -49,27 +42,22 @@ li {
     margin-bottom: 10px;
 }
 
-.project {
-    margin-bottom: 40px;
-}
-
 .project img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 blockquote {
     font-style: italic;
-    border-left: 2px solid #333;
+    border-left: 2px solid #007BFF;
     padding-left: 10px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
     padding: 20px 0;
+    background-color: #333;
+    color: #fff;
 }
