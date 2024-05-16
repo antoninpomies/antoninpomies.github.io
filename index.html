@@ -1,72 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Antonin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonin's Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Antonin</h1>
-        <p>Etudiant en Systèmes et Réseaux</p>
-    </header>
+  <div class="header">
+    <a href="#home" class="logo-link">
+      <img src="logo-light.png" alt="Logo" class="left-logo">
+    </a>
+  </div>
+  <div class="main-content" id="home">
+    <div class="text" id="typingText"></div>
+    <div class="wave">👋</div>
+    <div class="arrow" id="scrollArrow">
+      <i class="fas fa-circle-arrow-down"></i>
+    </div>
+  </div>
+  <div id="letter-container"></div>
 
-    <section id="about">
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/antonin-pomies-ba3ba4236/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://root-me.org/hackmesvp/" target="_blank" title="Root Me"><i class="fas fa-code fa-2x"></i></a>
-            <a href="https://github.com/antoninpomies" target="_blank" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
-            <a href="lien_vers_discord" target="_blank" title="Discord"><i class="fab fa-discord fa-2x"></i></a>
-        </div>
-        <h2>À propos de moi</h2>
-        <p>Je suis un développeur web passionné, spécialisé dans [insérez vos compétences ici]. Avec une solide expérience dans [insérez vos domaines d'expertise], je suis déterminé à créer des solutions innovantes et de qualité.</p>
-    </section>
+  <!-- Summary Section -->
+  <div class="summary-section" id="summarySection">
+    <h2>Sommaire</h2>
+    <nav>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#networks">Réseaux</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#contact">Me Contactez</a></li>
+      </ul>
+    </nav>
+  </div>
 
-    <section id="skills">
-        <h2>Compétences</h2>
-        <ul>
-            <li>Compétence 1</li>
-            <li>Compétence 2</li>
-            <!-- Ajoutez d'autres compétences -->
-        </ul>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="project">
-            <img src="projet1.jpg" alt="Projet 1">
-            <p>Description du projet 1.</p>
-        </div>
-        <!-- Ajoutez d'autres projets -->
-    </section>
-
-    <section id="testimonials">
-        <h2>Témoignages</h2>
-        <blockquote>
-            <p>"Témoignage d'un client satisfait."</p>
-            <cite>Nom du client</cite>
-        </blockquote>
-        <!-- Ajoutez d'autres témoignages -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Vous pouvez me contacter via les liens suivants :</p>
-        <div class="service-links">
-            <a href="lien_vers_linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-3x"></i></a>
-            <a href="lien_vers_root_me" target="_blank" title="Root Me"><i class="fas fa-code fa-3x"></i></a>
-            <a href="lien_vers_github" target="_blank" title="GitHub"><i class="fab fa-github fa-3x"></i></a>
-            <a href="lien_vers_discord" target="_blank" title="Discord"><i class="fab fa-discord fa-3x"></i></a>
-        </div>
-        <!-- Ajoutez un formulaire de contact si nécessaire -->
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Antonin - Développeur Web</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
