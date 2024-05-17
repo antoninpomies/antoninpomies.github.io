@@ -1,0 +1,99 @@
+/* Default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Header styles */
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  
+  .logo-link {
+    margin: 20px; /* Add margins around the logo */
+  }
+  
+  .left-logo {
+    height: 80px; /* Same height as the first page */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Main content styles */
+  .main-content {
+    margin-top: 100px;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  p, ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Card styles */
+  .card {
+    display: inline-block;
+    perspective: 1000px; /* Perspective for the 3D effect */
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover .profile-photo {
+    transform: rotateY(15deg) rotateX(15deg); /* Increase rotation effect */
+  }
+  
+  /* Light theme */
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: #F5F5F5;
+      color: #000;
+    }
+    .left-logo {
+      content: url('/logo-dark.png');
+    }
+  }
+  
+  /* Dark theme */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #212121;
+      color: #FFF;
+    }
+    .left-logo {
+      content: url('/logo-light.png');
+    }
+  }
