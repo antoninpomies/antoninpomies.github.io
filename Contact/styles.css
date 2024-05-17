@@ -58,41 +58,32 @@ p {
   margin-bottom: 40px;
 }
 
-.contact-form {
-  text-align: left;
+/* Blur effect styles */
+.blur-info {
+  filter: blur(5px);
+  transition: filter 0.3s;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+.blur-info:hover {
+  filter: none;
 }
 
-label {
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-
-input, textarea {
-  font-size: 1em;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  font-size: 1.2em;
-  padding: 10px;
+/* Copy button styles */
+.copy-btn {
   border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: white;
+  background: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 1.2em;
+  margin-left: 10px;
+  color: inherit;
 }
 
-button:hover {
-  background-color: #555;
+.copy-icon {
+  transition: transform 0.3s;
+}
+
+.copy-btn:active .copy-icon {
+  transform: scale(1.2);
 }
 
 /* Light theme */
@@ -104,17 +95,6 @@ button:hover {
   .left-logo {
     content: url('/logo-dark.png');
   }
-  input, textarea {
-    background-color: #fff;
-    color: #000;
-  }
-  button {
-    background-color: #333;
-    color: #fff;
-  }
-  button:hover {
-    background-color: #555;
-  }
 }
 
 /* Dark theme */
@@ -125,16 +105,5 @@ button:hover {
   }
   .left-logo {
     content: url('/logo-light.png');
-  }
-  input, textarea {
-    background-color: #333;
-    color: #fff;
-  }
-  button {
-    background-color: #fff;
-    color: #333;
-  }
-  button:hover {
-    background-color: #ccc;
   }
 }

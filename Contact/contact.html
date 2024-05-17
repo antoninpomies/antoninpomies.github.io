@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="/Footer/footer.css">
 </head>
 <body>
@@ -17,10 +18,23 @@
     <h1>Contactez-moi</h1>
     <section class="contact-info">
       <h2>Mes informations de contact</h2>
-      <p><strong>Email:</strong> antonin@example.com</p>
-      <p><strong>Téléphone:</strong> +33 6 12 34 56 78</p>
+      <p>
+        <strong>Email:</strong> 
+        <span class="blur-info" id="email">antoninpomies@gmail.com</span>
+        <button class="copy-btn" onclick="copyToClipboard('email')">
+          <i class="fas fa-copy" id="email-icon"></i>
+        </button>
+      </p>
+      <p>
+        <strong>Téléphone:</strong> 
+        <span class="blur-info" id="phone">+33 7 86 83 31 89</span>
+        <button class="copy-btn" onclick="copyToClipboard('phone')">
+          <i class="fas fa-copy" id="phone-icon"></i>
+        </button>
+      </p>
     </section>
   </div>
+  <script src="script.js"></script>
   <footer id="footer">
     <nav class="footer-nav">
       <ul>
