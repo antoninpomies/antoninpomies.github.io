@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/Footer/footer.css">
 </head>
 <body>
   <div class="header">
@@ -20,21 +21,20 @@
       <p><strong>Téléphone:</strong> +33 6 12 34 56 78</p>
       <p><strong>Adresse:</strong> 123 Rue Exemple, 75000 Paris, France</p>
     </section>
-    <section class="contact-form">
-      <h2>Formulaire de contact</h2>
-      <form action="submit_form.php" method="POST">
-        <label for="name">Nom:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        
-        <button type="submit">Envoyer</button>
-      </form>
-    </section>
   </div>
+  <footer id="footer">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="/index.html">Accueil</a></li>
+        <li><a href="/Social Page/social.html">Réseaux</a></li>
+        <li><a href="/About Me/about.html">A Propos de Moi</a></li>
+        <li><a href="/Contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <br>
+    <p style="margin-left: 30px;">Site par Antonin &copy; 2024 fait avec ❤️ & ChatGPT</p>
+  </footer>
+  
+  <script src="/Footer/footer.js"></script> <!-- Include the footer JS script -->
 </body>
 </html>
