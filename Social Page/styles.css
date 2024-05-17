@@ -1,0 +1,165 @@
+/* Default styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Header styles */
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  
+  .logo-link {
+    margin: 20px; /* Add margins around the logo */
+  }
+  
+  .left-logo {
+    height: 80px; /* Same height as the home page */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Light theme */
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: #F5F5F5;
+    }
+    .left-logo {
+      content: url('/logo-dark.png');
+    }
+    h2 {
+      color: #000;
+    }
+    .social-icons a {
+      color: #000;
+    }
+  }
+  
+  /* Dark theme */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #212121;
+    }
+    .left-logo {
+      content: url('/logo-light.png');
+    }
+    h2 {
+      color: #FFF;
+    }
+    .social-icons a {
+      color: #FFF;
+    }
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%; /* Full height to center content */
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    font-size: 2em;
+    transition: color 0.3s;
+  }
+  
+  /* Hover effects for social icons */
+  .social-icons a.github:hover {
+    color: #000; /* Change to black */
+  }
+  
+  .social-icons a.discord:hover {
+    color: #7289da; /* Change to Discord purple */
+  }
+  
+  .social-icons a.linkedin:hover {
+    color: #0077b5; /* Change to LinkedIn blue */
+  }
+  
+  /* Terminal Styles */
+  .terminal {
+    background: #000;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    margin: 20px;
+    padding: 20px;
+    width: 500px; /* Fixed width for the terminal */
+    max-width: 90%; /* Ensure it doesn't fill the screen */
+  }
+  
+  .terminal-header {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+  
+  .terminal-header .buttons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .terminal-header .buttons span {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+  }
+  
+  .terminal-header .buttons .red {
+    background: #ff605c;
+  }
+  
+  .terminal-header .buttons .yellow {
+    background: #ffbd44;
+  }
+  
+  .terminal-header .buttons .green {
+    background: #00ca4e;
+  }
+  
+  .terminal-body {
+    background: #1e1e1e;
+    border-radius: 5px;
+    padding: 10px;
+    white-space: pre-wrap; /* Ensure text wraps naturally */
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 10px;
+    background: #fff;
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
